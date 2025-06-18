@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi sitio con Tailwind</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white p-4">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+      <a class="font-bold text-xl" href="#">Mi sitio</a>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-gray-400">Inicio</a>
+        <a href="nosotros.html" class="hover:text-gray-400">Nosotros</a>
+        <a href="#" class="hover:text-gray-400">Precio</a>
+        <span class="text-gray-500 cursor-not-allowed">Deshabilitado</span>
+      </div>
+      <div class="flex space-x-2">
+        <button class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Iniciar sesión</button>
+        <button class="bg-green-600 px-4 py-2 rounded hover:bg-green-700">Regístrate</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div class="my-8">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="imagenes/adorable-conejo-ama-dos-conejos-lindos-que-comparten-momento-tierno_1348720-26760.avif" class="w-full h-[500px] object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="imagenes/conejo-mini-toy-mascotapng.webp" class="w-full h-[500px] object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="imagenes/conejo_535_600.jpg" class="w-full h-[500px] object-cover" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+  <!-- Iconos -->
+  <div class="grid grid-cols-2 md:grid-cols-6 gap-4 p-8 bg-gray-100">
+    <img src="imagenes/conejo_535_600.jpg" class="h-20 mx-auto" />
+    <img src="imagenes/bunny.webp" class="h-20 mx-auto" />
+    <img src="imagenes/conejo-mini-toy-mascotapng.webp" class="h-20 mx-auto" />
+    <img src="imagenes/eb1abce1e431c49d70ec64367b5da20b.jpg" class="h-20 mx-auto" />
+    <img src="imagenes/conejo_535_600.jpg" class="h-20 mx-auto" />
+    <img src="imagenes/adorable-conejo-ama-dos-conejos-lindos-que-comparten-momento-tierno_1348720-26760.avif" class="h-20 mx-auto" />
+  </div>
+
+  <!-- Acerca de -->
+  <section class="text-center my-12">
+    <h2 class="text-3xl font-bold mb-4">Acerca de</h2>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 px-4">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic alias ipsum asperiores! Ea numquam, voluptatum veritatis quisquam commodi aperiam doloribus dolorem quas asperiores ad. Esse illum similique aliquid nesciunt asperiores.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic alias ipsum asperiores! Ea numquam, voluptatum veritatis quisquam commodi aperiam doloribus dolorem quas asperiores ad. Esse illum similique aliquid nesciunt asperiores.</p>
+    </div>
+    <a href="#" class="mt-6 inline-block bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">Ver más</a>
+  </section>
+
+  <!-- Tarjetas -->
+  <div class="bg-gray-100 py-12 text-center">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4">
+      <div class="bg-white p-6 rounded shadow">
+        <img src="imagenes/bunny.webp" class="w-60 h-60 mx-auto rounded-full" />
+        <h5 class="mt-4 text-xl font-semibold">Título de la tarjeta</h5>
+        <p class="mt-2">Un texto de ejemplo rápido para colocar cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+        <a href="#" class="inline-block mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Enlace de tarjeta</a>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <img src="imagenes/bunny.webp" class="w-60 h-60 mx-auto rounded-full" />
+        <h5 class="mt-4 text-xl font-semibold">Título de la tarjeta</h5>
+        <p class="mt-2">Un texto de ejemplo rápido para colocar cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+        <a href="#" class="inline-block mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Enlace de tarjeta</a>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <img src="imagenes/bunny.webp" class="w-60 h-60 mx-auto rounded-full" />
+        <h5 class="mt-4 text-xl font-semibold">Título de la tarjeta</h5>
+        <p class="mt-2">Un texto de ejemplo rápido para colocar cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+        <a href="#" class="inline-block mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Enlace de tarjeta</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white p-8">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+      <div>INICIO</div>
+      <div>ACERCA DE</div>
+      <div>
+        Redes Sociales
+        <ul class="mt-2 space-y-2">
+          <li class="flex items-center space-x-2">
+            <!-- Heroicon: Facebook (usa tu propio SVG o icon font si prefieres) -->
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22 12a10 10 0 10-11.95 9.95v-7.05h-2.1v-2.9h2.1V9.1c0-2.07 1.23-3.2 3.12-3.2.9 0 1.84.16 1.84.16v2.02h-1.04c-1.03 0-1.35.64-1.35 1.3v1.56h2.3l-.37 2.9h-1.93V22A10 10 0 0022 12z"/>
+            </svg>
+            <span>Facebook</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22 12a10 10 0 10-11.95 9.95v-7.05h-2.1v-2.9h2.1V9.1c0-2.07 1.23-3.2 3.12-3.2.9 0 1.84.16 1.84.16v2.02h-1.04c-1.03 0-1.35.64-1.35 1.3v1.56h2.3l-.37 2.9h-1.93V22A10 10 0 0022 12z"/>
+            </svg>
+            <span>Facebook</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop: true,
+    });
+  </script>
+
+</body>
+</html>
